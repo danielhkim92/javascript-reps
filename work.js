@@ -24,14 +24,46 @@ const toonify = (accent, sentence) => {
 		return sentence
 	}
 }
+///4///
 
-const wordReverse = (string) => {
-	const splits = (){
-	for splits = string.split('');
-		if  splits.reverse('');
-}
+const wordReverse = (sentence) =>{
 
+	var words = sentence.split(" ").reverse(); // Split the sentence into an array of words and reverse it
+	var string = "";
+	for(word in words)
+		string += (word > 0 ? " " : "") + words[word]; // Concatenate each word to the output and add spaces where required
+	return string;
+	
 }
 wordReverse("Now I know what a TV dinner feels like")
 
-const letterReverse = (string) =>
+
+///5///
+const letterReverse = (string) =>{
+    return string.split('').reverse().join('');
+}
+letterReverse("hello");
+
+
+}
+
+//6//
+
+const longest = (string) => {
+  var longestWord = string.split(' ').sort(function(a, b) { return b.length - a.length; });
+  return longestWord[0];
+}
+
+longest("The quick brown fox jumped over the lazy dog");
+
+//7//
+
+
+
+
+
+
+
+
+
+
