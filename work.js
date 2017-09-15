@@ -1,24 +1,29 @@
 const lengths = (arrayOfStrings) => {
-	for const words = "";
+	const words = [];
 	console.log(arrayOfStrings.length)
-	 (i = 0, i <=words.length; i++){
-	console.log(arrayOfStrings.split(words).length-1)
+	for  (let i = 0; i < arrayOfStrings - 1; i++){
+	console.log(arrayOfStrings[i].length);
+	words.push(arrayOfStrings[i].length);
 }
+	return words;
 
 
+//2//
 const transmogrifier = (a, b, c) => {
 	console.log(Math.pow((a * b),c))
 	}
 
+
+////3////
+
+
 const toonify = (accent, sentence) => {
 	
 	if (accent === daffy){
-		const dsentence = sentence.replace(/s/i, 'th');
-		return sentence}
+		return sentence.replace('s', 'th');}
 		//replace s with th
-	else if (accent === elmer){}
-		const esentence = sentence.replace(/r/i, 'w');
-		return sentence }
+	else if (accent === elmer){
+		return sentence.replace('r', 'w'); }
 		// replace r with w
 	else {
 		return sentence
@@ -59,7 +64,11 @@ longest("The quick brown fox jumped over the lazy dog");
 //7//
 
 
-const repMaster 
+const repMaster  = (theInput, theFunction) => {
+	let result = theFunction(theInput);
+	return (result + " proves that i am the rep MASTER");
+}
+
 
 
 
